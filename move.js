@@ -39,4 +39,8 @@ class knight{
 
 
 const whiteKnight = new knight()
-console.log(whiteKnight.movement([4,3]))
+console.log(whiteKnight.movement([0,0]))
+console.log(whiteKnight.movement([1,2]))
+console.log(whiteKnight.movement([2,4]))
+console.log(whiteKnight.movement([6,5]))
+console.log(whiteKnight.movement([7,7]))
