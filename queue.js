@@ -1,4 +1,4 @@
-class Queue{
+export default class Queue{
     constructor(){
         this.items =  {}
         this.head = 0
@@ -26,13 +26,19 @@ class Queue{
     // Check current element
     peek(){
         return this.isEmpty() ? 'Queue is empty' : this.items[this.head]
-    } 
-
+    }
+    
     isEmpty(){
         return this.tail - this.head === 0
     }
 
-    size(){
+    length(){
         return this.tail - this.head
     }
+
+    show(){
+        return Object.values(this.items)
+    }
 }
+
+
